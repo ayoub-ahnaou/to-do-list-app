@@ -1,66 +1,106 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+  background: #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
 }
 
 .head {
-    text-align: center;
-    margin: 10px;
-    color: rgb(0, 5, 77);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
-    font-weight: bolder;
+  text-align: center;
+  margin: 10px;
+  color: rgb(0, 5, 77);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+  font-weight: bolder;
 }
 
 .container {
-    background: white;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.363);
-    border-radius: 10px;
-    width: 450px;
-    height: auto;
+  background: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.363);
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
 }
 
 .inputs {
-    display: flex;
-    gap: 2px;
-    margin: 10px;
+  display: flex;
+  gap: 2px;
+  margin: 10px;
 }
 
 .inputs input {
-    width: 100%;
-    border: none;
-    background: #f8f8f8;
-    padding: 10px;
-    border-radius: 5px;
+  width: 100%;
+  border: none;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .inputs button {
-    padding: 10px;
-    border: none;
-    outline: none;
-    background: orangered;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: orangered;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .inputs input:focus {
-    background: #ebe9e9;
-    outline: none;
+  background: #ebe9e9;
+  outline: none;
 }
 
 .inputs button:active {
-    scale: 1.02;
-    background: rgb(231, 62, 0);
-    outline: none;
+  scale: 1.02;
+  background: rgb(231, 62, 0);
+  outline: none;
 }
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  margin: 20px; 
+  gap: 20px;
+}
+
+.task {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4px;
+  color: #696969;
+}
+
+.task label {
+  width: 100%;
+  /* cursor: pointer; */
+}
+
+.task .checked {
+    text-decoration: line-through;
+}
+
+.task p {
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.task p:hover {
+  background: rgb(231, 231, 231);
+}
+
