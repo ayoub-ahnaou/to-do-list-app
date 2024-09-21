@@ -38,13 +38,20 @@ body {
 .inputs button {
     padding: 10px;
     border: none;
+    outline: none;
     background: orangered;
     color: white;
     border-radius: 5px;
     cursor: pointer;
 }
 
-input:focus {
+.inputs input:focus {
     background: #ebe9e9;
+    outline: none;
+}
+
+.inputs button:active {
+    scale: 1.02;
+    background: rgb(231, 62, 0);
     outline: none;
 }
