@@ -46,7 +46,7 @@ body {
 }
 
 .inputs button {
-  padding: 10px;
+  padding: 10px 18px;
   border: none;
   outline: none;
   background: orangered;
@@ -69,38 +69,30 @@ body {
 .tasks {
   display: flex;
   flex-direction: column;
-  margin: 20px; 
-  gap: 20px;
+  gap: 6px;
+  padding: 10px 0px;
 }
 
 .task {
-  width: 100%;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
+  gap: 3px;
   align-items: center;
-  gap: 4px;
-  color: #696969;
+  margin: 1px 12px;
+  justify-content: space-between;
 }
 
 .task label {
   width: 100%;
-  /* cursor: pointer; */
-}
-
-.task .checked {
-    text-decoration: line-through;
-}
-
-.task p {
-  padding: 2px;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  border-radius: 50px;
+  color: rgb(39, 39, 39);
   cursor: pointer;
 }
 
-.task p:hover {
-  background: rgb(231, 231, 231);
+.task button {
+  padding: 2px 10px;
+  border: none;
+  background: rgb(0, 0, 0);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
 }
-
