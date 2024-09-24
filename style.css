@@ -67,32 +67,40 @@ body {
 }
 
 .tasks {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 10px 0px;
+  padding: 5px 0px;
 }
 
-.task {
-  list-style: none;
+.item {
   display: flex;
-  gap: 3px;
-  align-items: center;
-  margin: 1px 12px;
   justify-content: space-between;
+  align-items: center;
+  margin: 2px 12px;
+  gap: 3px;
 }
 
-.task label {
-  width: 100%;
-  color: rgb(39, 39, 39);
-  cursor: pointer;
+.item .btns {
+  display: flex;
+  gap: 2px;
 }
 
-.task button {
-  padding: 2px 10px;
-  border: none;
-  background: rgb(0, 0, 0);
+.item .btns .markdone {
+  background: rgb(0, 37, 15);
   color: white;
-  border-radius: 4px;
+  padding: 3px 6px;
+  border-radius: 5px;
   cursor: pointer;
 }
+
+.item .btns .delete {
+  background-color: rgb(133, 3, 3);
+  color: white;
+  padding: 3px 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checked label{
+  text-decoration: line-through;
+  color: gray ;
+}
+
